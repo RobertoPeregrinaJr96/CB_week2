@@ -25,6 +25,15 @@ console.log(result3);   // true
 
 function mySome(array, cb) {
     // Your code here
+    let trueCount = 0;
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (cb(el, i) === true) {
+            trueCount++;
+        }
+    }
+    if (trueCount > 0) return true;
+    else return false;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
