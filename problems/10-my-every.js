@@ -23,7 +23,20 @@ console.log(myEvery(['book', 'door', 'pen'], hasO));    // false
 
 function myEvery(array, cb) {
     // Your code here
+        let trueCount = 0;
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (cb(el) === false) {
+            return false;        
+        }
+    }
+    return true;
 }
+    //         trueCount++;
+    //     }
+    // }
+    // if (trueCount = array.length) return true;
+    // else return false;
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {

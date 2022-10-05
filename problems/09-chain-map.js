@@ -31,6 +31,9 @@ console.log(chainMap(4, half, square));         // 4
 
 function chainMap(val, ...callbacks) {
   // Your code here
+  let newVal = val
+  callbacks.forEach(val)
+  
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
